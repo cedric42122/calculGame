@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CalculGaming</title>    
+</head>
+
+<body>
+    <div id="gameStart">
+        <button onclick="gameStart()" id="buttonStart" type="button" value="">COMMENCER LE JEU</button>
+    </div>
+    <div id="gameZone">
+   <div>
+       <span id="num" /></span>
+        <input id="answer" type="number" name="answer" value="" onkeyup="pressReturn()">
+       <button onclick="answerAnalysis()"  id="answerButton" type="button">REPONSE</button>
+    </div>
+    <div id="answerText"></div>
+   </div>
+</body>
+    <script src="script.js"></script>
+</html>
