@@ -16,6 +16,21 @@ function randomIntFromInterval(min, max) {
   var result = rndInt1 + rndInt2;
   document.getElementById('num').textContent = rndInt1 + "+" + rndInt2;
 
+  let time = 10
+  const timerElement = document.getElementById("timer")
+
+  function decreaseTime() {
+    timerElement.innerText = "Il reste "+ time + " secondes"
+    if(time > 0)
+    time--
+
+    else {
+      return document.getElementById("timer").textContent = "Vous avez mis trop de temps pour répondre !"
+    }
+  }
+
+  setInterval(decreaseTime, 1000)
+
 function answerAnalysis() {
   var answer = parseInt(document.getElementById("answer").value);
     if (answer == result) {
