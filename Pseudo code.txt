@@ -1,0 +1,3 @@
+1.Le jeux commence si on appui sur le bouton "commencer"
+2.Choix de la difficulté
+3.
